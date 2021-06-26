@@ -1,0 +1,9 @@
+Player A->Queue: Join
+Queue->Queue: Lock
+Queue->Queue: Unlock
+Player B->Queue: Join
+Queue->Queue: Lock
+Game<-Queue: Create
+Queue->Queue: Unlock
+Player A<--Queue: Notify
+Player B<--Queue: Notify

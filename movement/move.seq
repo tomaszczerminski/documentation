@@ -1,0 +1,12 @@
+Player A->Game: Move unit
+Game->Game: Lock
+Game->Game: Check if player is in game
+Game->Game: Check if player has turn
+Game->Game: Check if player owns unit
+Game->Game: Check if move is valid
+Game->Game: Check if unit can move
+Game->Game: Check if unit has enough action points
+Game->Game: Change state
+Game->Game: Unlock
+Game->Player B: Notify
+Game-->Player A: Respond
